@@ -1,4 +1,4 @@
-const Switch = require('./Switch');
+const Switch = require('./../core/Switch');
 const { execFile } = require('child_process');
 const path = require('path');
 

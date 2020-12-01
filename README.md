@@ -10,7 +10,7 @@ npm i -g pm2
 npm i -g pm2-windows-service
 
 pm2-service-install -n hass_device_computer
-pm2 start app.js
+pm2 start app
 pm2 save
 ```
 

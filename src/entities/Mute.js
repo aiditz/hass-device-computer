@@ -1,4 +1,4 @@
-const Switch = require('./Switch');
+const Switch = require('./../core/Switch');
 const loudness = require('loudness');
 
 class Mute extends Switch {
