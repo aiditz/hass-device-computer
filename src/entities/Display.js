@@ -2,7 +2,7 @@ const Switch = require('./../core/Switch');
 const { execFile } = require('child_process');
 const path = require('path');
 
-const BIN_PATH = path.resolve(__dirname, '../bin/turn_off_display.exe');
+const BIN_PATH = path.resolve(__dirname, '../../bin/turn_off_display.exe');
 
 class Display extends Switch {
   async onCommandOff() {
