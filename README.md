@@ -14,6 +14,6 @@ pm2 start app.js
 pm2 save
 ```
 
-2. Run `.bin/turn_off_display.exe`, allow it to run without confirmation.
+2. Run `bin/turn_off_display.exe`, allow it to run without confirmation.
 
 3. Copy content of the `hass-config.yaml` file to the `configuration.yaml` file in the home assistant data folder.
