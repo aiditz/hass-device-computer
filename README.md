@@ -1,4 +1,4 @@
-ѕриложение служит дл€ интеграции машины на Windows в Home Assistant.
+App allows you to integrate your Windows machine with Home Assistant.
 
 *Installation*
   
