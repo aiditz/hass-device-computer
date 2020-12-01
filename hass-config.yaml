@@ -12,3 +12,17 @@ switch:
     optimistic: false
     qos: 0
     retain: true
+    
+  - platform: mqtt
+    unique_id: aiditz_pc_display
+    name: "AiditzPC Display"
+    state_topic: "aiditz_pc/switch/display/state"
+    command_topic: "aiditz_pc/switch/display/command"
+    availability_topic: "aiditz_pc/status"
+    payload_on: "ON"
+    payload_off: "OFF"
+    state_on: "ON"
+    state_off: "OFF"
+    optimistic: false
+    qos: 0
+    retain: false

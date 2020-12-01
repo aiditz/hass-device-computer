@@ -6,12 +6,7 @@ class Entity {
     this.config = config;
     
     client.on('connect', () => {
-      client.publish(config.availability_topic, 'online');
       this.onConnect();
-    });
-
-    process.on('beforeExit', () => {
-      client.publish(config.availability_topic, 'offline');
     });
   }
   

@@ -7,6 +7,10 @@ class Switch extends Entity {
     this.active = false;
 
     this.client.on('message', async (topic, message) => {
+      if (topic !== this.config.command_topic) {
+        return;
+      }
+      
       const value = message.toString() === 'ON'; 
       this.log('Got command: active =', value);
       
