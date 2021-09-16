@@ -4,7 +4,7 @@ App allows you to integrate your Windows machine with Home Assistant.
 
 1. Install [node.js](https://nodejs.org/).
 
-2. Run `bin/turn_off_display.exe`, allow it to run without confirmation.
+2. Run `bin/turn_off_display.exe` for test, allow it to run without confirmation.
 
 3. Copy the `hass-config.dist.yaml` file to the `hass-config.yaml`.
 
