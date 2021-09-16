@@ -1,10 +1,10 @@
 switch:
   - platform: mqtt
-    unique_id: aiditz_pc_mute
-    name: "AiditzPC Mute"
-    state_topic: "aiditz_pc/switch/mute/state"
-    command_topic: "aiditz_pc/switch/mute/command"
-    availability_topic: "aiditz_pc/status"
+    unique_id: windows_pc_mute
+    name: "Windows Mute"
+    state_topic: "windows_pc/switch/mute/state"
+    command_topic: "windows_pc/switch/mute/command"
+    availability_topic: "windows_pc/status"
     payload_on: "ON"
     payload_off: "OFF"
     state_on: "ON"
@@ -14,11 +14,39 @@ switch:
     retain: true
     
   - platform: mqtt
-    unique_id: aiditz_pc_display
-    name: "AiditzPC Display"
-    state_topic: "aiditz_pc/switch/display/state"
-    command_topic: "aiditz_pc/switch/display/command"
-    availability_topic: "aiditz_pc/status"
+    unique_id: windows_pc_display
+    name: "Windows Display"
+    state_topic: "windows_pc/switch/display/state"
+    command_topic: "windows_pc/switch/display/command"
+    availability_topic: "windows_pc/status"
+    payload_on: "ON"
+    payload_off: "OFF"
+    state_on: "ON"
+    state_off: "OFF"
+    optimistic: false
+    qos: 0
+    retain: false
+    
+  - platform: mqtt
+    unique_id: windows_pc_volume_minus
+    name: "Windows Volume -"
+    state_topic: "windows_pc/switch/volume_minus/state"
+    command_topic: "windows_pc/switch/volume_minus/command"
+    availability_topic: "windows_pc/status"
+    payload_on: "ON"
+    payload_off: "OFF"
+    state_on: "ON"
+    state_off: "OFF"
+    optimistic: false
+    qos: 0
+    retain: false
+    
+  - platform: mqtt
+    unique_id: windows_pc_volume_plus
+    name: "Windows Volume +"
+    state_topic: "windows_pc/switch/volume_plus/state"
+    command_topic: "windows_pc/switch/volume_plus/command"
+    availability_topic: "windows_pc/status"
     payload_on: "ON"
     payload_off: "OFF"
     state_on: "ON"
